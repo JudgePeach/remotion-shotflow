@@ -1,0 +1,27 @@
+# Local runtimes and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+output/
+dist/
+research/
+private/
+
+# Reference media is not part of this public skill.
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.avi
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.zip
