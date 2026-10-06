@@ -1,4 +1,4 @@
 interface:
-  display_name: "Remotion 镜头与卡点"
-  short_description: "从参考片提炼连续镜头、阅读节奏与音画卡点，制作可复用的 Remotion 视频"
-  default_prompt: "使用 $remotion-reference-craft，依据参考视频或我的内容，设计并制作一段具有连续镜头和经过核对的音画节奏的 Remotion 视频。"
+  display_name: "ShotFlow for Remotion"
+  short_description: "Reference-guided Remotion shots and audio cue timing"
+  default_prompt: "Use $remotion-shotflow to design a Remotion video from my reference or content, with continuous shots, readable pacing and clearly documented audio cues."

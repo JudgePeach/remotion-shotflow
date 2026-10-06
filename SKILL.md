@@ -1,9 +1,9 @@
 ---
-name: remotion-reference-craft
-description: 基于参考视频或分镜制作、改进 Remotion 产品介绍与界面动效视频，复用连续对象、阅读镜头、几何转场和音画卡点方法。适用于“做成这种视频”“参考片拆解”“动画不够连贯”“配乐卡点/音效对齐”等任务；仅需字幕转写、普通剪辑或 Remotion API 答疑时不必使用。
+name: remotion-shotflow
+description: Design and refine reference-guided Remotion product videos and UI motion using object continuity, reading shots, geometric transitions and audio cue timing. Use for reference breakdowns, shot recreation and motion or audio alignment; not for transcription, basic editing or API-only questions. 基于参考视频制作或改进 Remotion 镜头与音画卡点，适用于参考片拆解、复刻一镜、连续动效与音效对齐。
 ---
 
-# Remotion 镜头与卡点
+# ShotFlow for Remotion · 镜头与卡点
 
 把画面里“发生了什么”转成可重复渲染的镜头，把声音里“何时发生”转成可核对的时间轴。本技能沉淀了10条参考片的视觉观察和音轨测量；它们是可选的设计依据，不是固定模板，也不证明原作者用 Remotion 制作。
 

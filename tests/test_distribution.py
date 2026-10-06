@@ -29,13 +29,13 @@ class DistributionTests(unittest.TestCase):
         content = (ROOT / 'SKILL.md').read_text(encoding='utf-8')
         self.assertTrue(content.startswith('---\n'))
         metadata = yaml.safe_load(content.split('---', 2)[1])
-        self.assertEqual(metadata['name'], 'remotion-reference-craft')
+        self.assertEqual(metadata['name'], 'remotion-shotflow')
         self.assertTrue(metadata['description'].strip())
         interface = yaml.safe_load((ROOT / 'agents/openai.yaml').read_text(encoding='utf-8'))
         self.assertIn('$' + metadata['name'], interface['interface']['default_prompt'])
 
     def test_relative_markdown_links_resolve_within_repository(self):
-        documents = [ROOT / 'README.md', ROOT / 'SKILL.md', ROOT / 'CONTRIBUTING.md',
+        documents = [*(ROOT.glob('README*.md')), ROOT / 'SKILL.md', ROOT / 'CONTRIBUTING.md',
                      ROOT / 'THIRD_PARTY_NOTICES.md', *(ROOT / 'references').glob('*.md'),
                      *(ROOT / 'assets').glob('*.md')]
         for document in documents:
